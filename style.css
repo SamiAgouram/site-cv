@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle, rgba(15,0,55,1) 0%, rgba(42,0,101,1) 37%, rgba(62,46,169,1) 78%, rgba(146,18,209,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/*--menu--*/
+
+.cont .menu{
+    align-items: center;
+    padding: 20px 0px;
+    height: 90px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(19, 19, 19, .8);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+
+.cont .menu nav .logo{
+    line-height: 0;
+    align-items: center;
+    font-family: Trochut;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.menu header .gauche {
+    align-items: center;
+}
+
+.menu .droit{
+    width: 0 auto;
+    margin-right: 210px;
+}
+
+header{
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.cont .menu nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+.cont .menu nav ul li a:after {
+    content: '';
+    margin-top: 3px;
+    margin-left: -6%;
+    position: relative;
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: 0.25s;
+    background: rgb(188, 194, 255);
+}
+
+.cont .menu nav ul li a:hover:after{
+    width: 112%;
+}
+
+.menu nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0px 10%;
+}
+
+.menu nav ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cont .menu nav ul li a{
+    font-size: 1.2em;
+    margin: 5px 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.cont .menu nav .Dl {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: medium;
+	transition: all 0.3s ease 0s;
+	filter: hue-rotate(0deg) saturate(1);
+    background: linear-gradient(to right top, #270099, #2a00a5, #2e00b1, #3100bd, #3400c9, #3e00d2, #4800da, #5200e3, #6300ea, #7300f1, #8100f8, #9000ff);
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+/*-debut de page-*/
+
+.sec1{
+    height: 100vh;
+    width: 100%;
+}
+
+.sec1 .container{
+    width: 100%;
+    margin-right: 210px;
+    height: 100%;
+}
+
+.sec1 .container .bloc{
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+
+}
+
+/*--Left--*/
+
+.sec1 .container .bloc .left{
+    padding-right: 15px;
+    width: 670px;
+    margin-top: 250px;
+}
+
+.sec1 .container .bloc .left .bloc-intern{
+    padding-right: 20px;
+    background-image: url(img/RectangleV1.png),url(img/carre.jpg);
+    background-repeat: no-repeat,no-repeat;
+    background-position-x: 0%,100%;
+    background-position-y: 10%,100%;
+}
+
+.sec1 .bloc h1{
+    font-weight: bold;
+    margin-left:51px;
+    color: white;
+    font-size: 64px;
+
+}
+
+.sec1 .bloc .left .bloc-intern .desc{
+    margin-left: 135px;
+    max-width: 470px;
+    font-size: 23px;
+    font-weight: medium;
+    color: #ffffff;
+}
+
+.sec1 .bloc .left .bloc-intern .desc2{
+    margin-left: 135px;
+    margin-top: 25px;
+    max-width: 850px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+.carre{
+    margin-left: auto;
+    display: block;
+}
+
+.socials{
+    margin-top: 30px;
+}
+
+.socials img{
+    scale: 70%;
+    margin-right: 50px;
+}
+
+.socials a:hover {
+    opacity: 0.7;
+    transition-duration: 0.4s;
+}
+
+/*--RIGHT--*/
+.sec1 .container .bloc .right{
+    z-index: -1;
+    margin-top: 200px;
+    margin-left: auto;
+    display: block;
+    position: relative;
+}
+
+.sec1 .container .bloc .right .img1{
+    scale: 120%;
+    box-shadow: 0px 0px 10px 5px rgba(19, 19, 19, .5);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.sec1 .container .bloc .right .img-bg{
+    scale: 120%;
+    opacity: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: -2;
+}
+
+.sec1 .container .bloc .left .icon{
+    color: white;
+    margin-left: 45%;
+    margin-top: 100px;
+    
+}
+.sec1 .container .bloc .left .icon .souris{
+
+    color: white;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+
+/*----section2----*/
+
+.sec2{
+    background-color:rgba(19,1,37,0.5);
+    height: 100vh;
+    width: 100%;
+}
+
+.sec2 .container2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1500px;
+    margin: 0 auto;
+}
+/*--COMPETENCES--*/
+.sec2 .container2 .titre2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2 .container2 .titre2 h1{
+    align-items: center;
+    padding: 7px 15px;
+    font-weight: 500;
+    color: white;
+    background-image: url(img/Rectangle2.png), url(img/circle2.png);
+    background-position-x: 0%,100%;
+    background-position-y: 0%, 100%;
+    background-repeat: no-repeat,no-repeat;
+}
+
+/*--3 blocs--*/
+
+.sec2 .container2 .bloc2{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+}
+
+.sec2 .container2 .bloc2 .item{
+    padding: 5% 5%;
+    height: 550px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    border-radius: 1em;
+    width: 33%;
+    transition: width 1000ms ease;
+    cursor: pointer;
+    background-position: center top;
+    box-shadow: 0px 0px 20px 1px rgba(15,0,55,0.5);
+    overflow: hidden;
+}
+
+.sec2 .container2 .bloc2 .item:hover{
+    filter: blur(3px);
+    width: 50%;
+}
+
+.sec2 .container2 .bloc2 .item .vert{
+    text-align: left;
+    padding-top: 370px;
+    text-shadow: 2px 2px 6px rgb(31, 31, 31);
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    opacity: 1;
+    transition: opacity 1000ms ease;    
+}
+  
+.sec2 .container2 .bloc2 .item:hover .vert{
+    display: none;
+}
+
+.sec2 .container2 .bloc2 .item .horiz{
+    margin: 40% auto;
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 24px;
+}
+
+.sec2 .container2 .bloc2 .item:hover .horiz{
+    display: block;
+}
